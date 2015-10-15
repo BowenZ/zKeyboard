@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>App Name</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        overflow: auto;
+        font-family: '微软雅黑';
+    }
+    </style>
+</head>
+
+<body>
+    <div class="input-container">
+        <input class="zkey-input" type="text" type="number" readonly maxlength="4">
+    </div>
+    <div class="zkey-container">
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+    <script src="./zKeyboard.js"></script>
+    <script>
+    zKeyboard.init({
+    	leftBottomCallback: function(){
+    		console.log(123);
+    	}
+    });
+    </script>
+</body>
+
+</html>
