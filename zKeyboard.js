@@ -62,8 +62,8 @@ window.zKeyboard = (function() {
     };
 
     $self.init = function(config) {
-        if ($($self.defultConfig.container).children().length > 0) {
-            throw $self.defultConfig.container + 'is not empty!';
+        if ($($self.defultConfig.container).children('table.zkeys').length > 0) {
+            throw $self.defultConfig.container + ' has been initialized';
             return;
         }
 
